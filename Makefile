@@ -1,5 +1,5 @@
 install:
-	poetry install
+	pip install
 
 test:
 	python -m pytest -vv --cov=src tests
@@ -10,4 +10,4 @@ debug:
 format:
 	black src/*.py
 
-all: install lint test format
+all: install test format
