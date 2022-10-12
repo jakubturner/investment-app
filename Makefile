@@ -10,7 +10,4 @@ debug:
 format:
 	black src/*.py
 
-lint:
-	pylint --disable=R,C src
-
 all: install lint test format

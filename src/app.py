@@ -18,7 +18,7 @@ app.secret_key = "asdas"
 
 
 def log_request(req: "flask_request", res: str) -> None:
-    with open("vsearch.log", "a") as log:
+    with open("vsearch.log", "a", encoding="utf-8") as log:
         print(req.form, res, file=log, sep=" | ")
 
     with UseDatabase(app.config["dbconfig"]) as cursor:
