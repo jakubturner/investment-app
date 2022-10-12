@@ -1,5 +1,6 @@
 class Calculation:
     """this class is use for calculate compound investments"""
+
     def __init__(self, money, years, interest) -> None:
         self.money = money
         self.years = years
