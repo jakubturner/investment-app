@@ -1,0 +1,11 @@
+# idea files
+
+.idea/
+
+# env
+
+.env
+
+# log
+
+src/*.log

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/result'>
+    <table>
+        <p>Use this form to submit request your calculation:</p>
+         <tr>
+            <td>name of investment tool:</td>
+            <td><input name='name' type='text' width='60' placeholder="my first investment"></td>
+        </tr>
+        <tr>
+            <td>money:</td>
+            <td><input name='money' type='number' value='1000' width='60'> $</td>
+        </tr>
+        <tr>
+            <td>years:</td>
+            <td><input name='years' type='number' step="0.1" value='1'></td>
+        </tr>
+         <tr>
+            <td>interest:</td>
+            <td><input name='interest' type='number' step="0.01" value='10'> %</td>
+        </tr>
+    </table>
+    <p>When you're ready to get result, click this button:</p>
+    <p><input value='Calculate!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

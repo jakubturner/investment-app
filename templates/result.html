@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>You submitted the following data:</p>
+<table>
+    <tr>
+        <td>name of investment tool:</td>
+        <td>{{ name }}</td>
+    </tr>
+    <tr>
+        <td>money:</td>
+        <td>{{ money }}</td>
+    </tr>
+    <tr>
+        <td>years:</td>
+        <td>{{ years }}</td>
+    </tr>
+    <tr>
+        <td>interest:</td>
+        <td>{{ interest }}</td>
+    </tr>
+    <tr>
+        <td>result:</td>
+        <td>{{ results }}</td>
+    </tr>
+</table>
+
+<h3>{{ results }}</h3>
+
+{% endblock %}
